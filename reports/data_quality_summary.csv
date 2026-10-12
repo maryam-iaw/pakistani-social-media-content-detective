@@ -1,0 +1,16 @@
+check,column,count,percentage
+total_rows,all,2260,100.0
+duplicate_rows,all,44,1.95
+missing_values,post_id,0,0.0
+missing_values,timestamp,0,0.0
+missing_values,platform,0,0.0
+missing_values,user,0,0.0
+missing_values,followers_count,90,3.98
+missing_values,verified,44,1.95
+missing_values,text,0,0.0
+missing_values,hashtags,788,34.87
+missing_values,country,126,5.58
+missing_values,likes,0,0.0
+missing_values,retweets_shares,0,0.0
+missing_values,comments,46,2.04
+missing_values,sentiment,33,1.46
