@@ -1,0 +1,14 @@
+column,observed_dtype,description,analysis_role,notes,missing_count,unique_values
+post_id,object,Post identifier,Identifier,Check uniqueness; do not assume it is anonymized.,0,2200
+timestamp,object,Date/time associated with a post,Datetime or string,Parse dates and document timezone if known.,0,2200
+platform,object,Social media platform label,Categorical,Normalize capitalization and report platform coverage.,0,10
+user,object,Account or user label,Identifier/text,Avoid publishing identifiable account information without a valid basis.,0,2185
+followers_count,object,Recorded follower count,Numeric,"Check missing, negative, and extreme values.",90,1814
+verified,object,Whether the account is marked verified,Boolean/category,Inspect actual values and standardize only when justified.,44,2
+text,object,Text associated with the post,Text,"Review language, relevance, privacy, and collection permissions.",0,150
+hashtags,object,Hashtags associated with the post,Text/list-like,Define how hashtags are separated before counting them.,788,662
+country,object,Country label in the dataset,Categorical,Do not assume it means audience location unless documented.,126,24
+likes,int64,Recorded likes,Numeric engagement measure,Check missing and negative values.,0,102
+retweets_shares,int64,Recorded reposts or shares,Numeric engagement measure,Meanings may differ by platform.,0,33
+comments,float64,Recorded comments,Numeric engagement measure,Check missing values and platform-specific definitions.,46,19
+sentiment,object,Sentiment label supplied in the dataset,Categorical,Validate the label source and method before treating it as ground truth.,33,3
