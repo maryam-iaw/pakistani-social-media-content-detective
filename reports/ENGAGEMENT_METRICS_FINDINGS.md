@@ -1,0 +1,5 @@
+# Initial Engagement Metrics Analysis\n\n## Purpose\nThis report profiles available engagement measures in the starter dataset.\n\n## Results\n                  count       mean  median  min    max
+metric                                                
+likes            2252.0  36.077709    33.0  5.0  126.0
+retweets_shares  2260.0   6.617699     6.0  0.0   37.0
+comments         2214.0   3.448509     3.0  0.0   20.0\n\n## Data quality notes\n- Negative likes in source data: 8\n- Missing comments in source data: 46\n- Negative counts are excluded from summary statistics; source data is unchanged.\n\n## Interpretation limits\n- These records have not been established as representative of Pakistani audiences.\n- Likes, shares, and comments can vary by platform and audience size.\n- This descriptive summary does not establish causation.\n- The results must not be presented as findings about Pakistani audiences.\n\n## Next steps\nRepeat this analysis on legally collected, documented data relevant to Pakistan.\n
